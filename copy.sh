@@ -13,6 +13,6 @@ fi
 echo "copying to $1"
 
 cp -r client collections i18n lib packages private public readme server  $1
-cp -r .gitignore LICENSE README.md start.sh copy.sh $1
-
-
+cp  .gitignore LICENSE README.md start.sh copy.sh $1
+mkdir $1/.meteor
+cp .meteor/* .meteor/.gitignore .meteor/.id $1/.meteor
